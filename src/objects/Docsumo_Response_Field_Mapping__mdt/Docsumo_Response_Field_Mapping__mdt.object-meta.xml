@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Docsumo Response Field Mapping</label>
+    <pluralLabel>Docsumo Response Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
