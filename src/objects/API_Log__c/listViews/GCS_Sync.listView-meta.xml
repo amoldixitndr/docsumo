@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GCS_Sync</fullName>
+    <columns>NAME</columns>
+    <columns>Tag__c</columns>
+    <columns>Action__c</columns>
+    <columns>Request_Duration__c</columns>
+    <columns>Callout_Time__c</columns>
+    <columns>Page_Number__c</columns>
+    <columns>Records_Processed__c</columns>
+    <columns>Has_Errors__c</columns>
+    <columns>Request_Time__c</columns>
+    <columns>Send_Notification__c</columns>
+    <columns>CreatedTime__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Tag__c</field>
+        <operation>equals</operation>
+        <value>GCS Sync</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:2</value>
+    </filters>
+    <label>GCS Sync</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Endpoint_Errors</fullName>
+    <columns>NAME</columns>
+    <columns>Class_Name__c</columns>
+    <columns>Affiliate_Name__c</columns>
+    <columns>Request_URI__c</columns>
+    <columns>Has_Errors__c</columns>
+    <columns>Request_Time__c</columns>
+    <columns>Send_Notification__c</columns>
+    <columns>CreatedTime__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:15</value>
+    </filters>
+    <filters>
+        <field>Class_Name__c</field>
+        <operation>equals</operation>
+        <value>LeadImportREST</value>
+    </filters>
+    <filters>
+        <field>Has_Errors__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Lead Endpoint Errors</label>
+</ListView>
